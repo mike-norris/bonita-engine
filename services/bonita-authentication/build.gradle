@@ -5,11 +5,12 @@
 //}
 
 dependencies {
+    compile project(':bpm:bonita-common')
+    compile project(":bpm:bonita-client")
+//    compile project(':bpm:bonita-api:bonita-server-api-http')
     compile project(':services:bonita-identity')
     compile project(':services:bonita-commons')
     compile project(':services:bonita-log-technical')
-    compile project(':bpm:bonita-api')
-    compile project(':bpm:bonita-client')
     testCompile "junit:junit:${Deps.junit4Version}"
     testCompile "org.mockito:mockito-core:${Deps.mockitoVersion}"
 }
@@ -17,7 +18,7 @@ dependencies {
 //bootJar {
 //    enabled = false
 //}
-//
+
 //jar {
 //    enabled = true
 //}
