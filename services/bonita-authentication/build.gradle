@@ -1,9 +1,23 @@
-
+//plugins {
+//    id 'org.springframework.boot' version '2.2.2.RELEASE'
+//    id 'io.spring.dependency-management'
+//    id 'java'
+//}
 
 dependencies {
     compile project(':services:bonita-identity')
     compile project(':services:bonita-commons')
     compile project(':services:bonita-log-technical')
+    compile project(':bpm:bonita-api')
+    compile project(':bpm:bonita-client')
     testCompile "junit:junit:${Deps.junit4Version}"
     testCompile "org.mockito:mockito-core:${Deps.mockitoVersion}"
 }
+
+//bootJar {
+//    enabled = false
+//}
+//
+//jar {
+//    enabled = true
+//}
